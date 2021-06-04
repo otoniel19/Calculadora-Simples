@@ -1,0 +1,19 @@
+h1
+{
+				border: 2px solid;
+				color: green;
+				border-color: green;
+}
+h2
+{
+				border-color: green;
+				border: 2px solid;
+				font-size: 100%;    
+}
+h3
+{
+				font-size: 155%;
+				color: green;
+				border: 2px solid;
+				border-color: green;
+}

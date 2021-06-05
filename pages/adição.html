@@ -4,10 +4,26 @@
 				<meta charset="UTF-8">
 				<meta name="viewport" content="width=device-width, initial-scale=1.0">
 				<title>Adição</title>
-				<script src="js/adição.js"></script>
+				
 </head>
 <body>
 				<body bgcolor="#40ffcb"></body></br>
 				<input style="color: red ; "type="button" value="Voltar" onclick="history.go(-1)">
 </body>
 </html>
+      <script>
+	    var x = prompt("digite um número")
+	    x = parseInt(x)
+	      
+	      var valor = 1;
+	     
+	      while (valor <= 5000) {
+	          document.write( x + " + " + valor + " = " +
+				 (x + valor) + " </br> ")
+		      if ( x % 10 === 0) {
+		           document.write("<hr>")
+			      
+		      }
+		      valor += 1;
+	      }
+	      </script>

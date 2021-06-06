@@ -17,7 +17,31 @@ h3
 				border: 2px solid;
 				border-color: green;
 }
-
-
-
-
+img 
+{
+				margin-top: -50px;
+				border: 5px solid;
+				border-color: black;
+				width: 350;
+				height: 210px;								
+}
+h4 
+{
+				font-size: 40px;
+				color: green;
+				
+}
+input
+{
+				width: 395px;
+				color: green;
+				border: 2px solid;
+				border-color: green;
+				bottom
+}
+body
+{
+				background: url('https://i.ibb.co/8xjdR35/download-2021-06-06-T133831-779.jpg');   
+				background-repeat: no-repeat;    
+				background-size: cover;  
+}

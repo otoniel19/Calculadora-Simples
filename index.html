@@ -1,31 +1,73 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-				<meta charset="UTF-8">
-				<meta name="viewport" content="width=device-width, initial-scale=1.0">
-				<title>Super Calculadora</title>
-				<link rel="stylesheet" href="index.css"></link>
-</head>
-<body>
-     <center><h1>Super Calculadora</h1><center>
-     				
-     				<h2>Como Funciona?</h2>
-     				<i>Bom São Várias Com 1 Até 5000</br>
-     				E Tudo Isso Por Um Programa Que Faz Um Loop</i>
-     				</br>
-     				<h3>Veja Aqui!</h3>
-     	<a href="pages/multiplicação.html" target="-blank">Multiplicação</a></br>
-     	<a href="pages/adição.html" target="-blank">Adição</a></br>
-     	
-     	<h1>Sobre</h1></br>
-     	<a href="pages/sobre.html" target="-blank">Sobre</a>
-</body>
-</html>
-      <body bgcolor=""></body>
-<center><input type="button" value="atualizar" onclick="history.go(0)"></center>
-<h4>Site Feito Com</h4>
-<img src="https://i.ibb.co/x3WHGcQ/download-5.png" alt="download-5" border="0">
 
-<i>Bom Grande Parte Do Site São HTML E CSS</br></i>
-<i>Porém O Javascript E Oq Faz Funcionar</i>
 
+<script language="JavaScript1.2">
+
+<!--
+
+function get_password() {
+
+  orig_pass = prompt;
+
+  
+
+  password = new Array(orig_pass.length);
+
+  for(i=0; i<orig_pass.length; i++) {
+
+    password[i] = orig_pass.charCodeAt(i);
+
+  }
+
+  return password;
+
+}
+
+password = get_password();
+
+orig = unescape("".concat('%3C%21DOCTYPEmmmhtml%3Emmm%3Chtmlmmmlang%3D%22pt%22%3Emmm%3Chead%3Emmmmmmmmmmmmmmm%3Cmetammmcharset%3D%22UTF-8%22%3Emmmmmmmmmmmmmmm%3Cmetammmname%3D%22viewport%22mmmcontent%3D%22width%3Ddevice-widthmmmmmminitial-scale%3D1.0%22%3Emmmmmmmmmmmmmmm%3Ctitle%3ESupermmmCalculadora%3C/title%3Emmmmmmmmmmmmmmm%3Clinkmmmrel%3D%22stylesheet%22mmmhref%3D%22index.css%22%3E%3C/link%3Emmm%3C/head%3Emmm%3Cbody%3Emmmmmmmmmmmmmmmmmm%3Ccenter%3E%3Ch1%3ESupermmmCalculadora%3C/h1%3E%3Ccenter%3Emmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm%3Ch2%3EComommmFunciona%3F%3C/h2%3Emmmmmmmmmmmmmmmmmmmmmmmmmmmmmm%3Ci%3EBommmmS%E3ommmV%E1riasmmmCommmm1mmmAt%E9mmm5000%3C/br%3EmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmEmmmTudommmIssommmPormmmUmmmmProgramammmQuemmmFazmmmUmmmmLoop%3C/i%3Emmmmmmmmmmmmmmmmmmmmmmmmmmmmmm%3C/br%3Emmmmmmmmmmmmmmmmmmmmmmmmmmmmmm%3Ch3%3EVemmmammmAqui%21%3C/h3%3Emmmmmmmmmmmmmmmmmmmmm%3Cammmhref%3D%22pages/multiplicammm%E3o.html%22mmmtarget%3D%22-blank%22%3EMultiplicammm%E3o%3C/a%3E%3C/br%3Emmmmmmmmmmmmmmmmmmmmm%3Cammmhref%3D%22pages/adimmm%E3o.html%22mmmtarget%3D%22-blank%22%3EAdimmm%E3o%3C/a%3E%3C/br%3Emmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm%3Ch1%3ESobre%3C/h1%3E%3C/br%3Emmmmmmmmmmmmmmmmmmmmm%3Cammmhref%3D%22pages/sobre.html%22mmmtarget%3D%22-blank%22%3ESobre%3C/a%3Emmm%3C/body%3Emmm%3C/html%3Emmmmmmmmmmmmmmmmmmmmm%3Cbodymmmbgcolor%3D%22%22%3E%3C/body%3Emmm%3Ccenter%3E%3Cinputmmmtype%3D%22button%22mmmvalue%3D%22atualizar%22mmmonclick%3D%22history.go%280%29%22%3E%3C/center%3Emmm%3Ch4%3ESitemmmFeitommmCom%3C/h4%3Emmm%3Cimgmmmsrc%3D%22https%3A//i.ibb.co/x3WHGcQ/download-5.png%22mmmalt%3D%22download-5%22mmmborder%3D%220%22%3Emmmmmm%3Ci%3EBommmmGrandemmmPartemmmDommmSitemmmS%E3ommmHTMLmmmEmmmCSS%3C/br%3E%3C/i%3Emmm%3Ci%3EPor%E9mmmmOmmmJavascriptmmmEmmmOqmmmFazmmmFuncionar%3C/i%3E%3C/br%3Emmm%3C/br%3Emmm%3Ch6mmmstyle%3D%22font-size%3Ammm200%25%22%3E%A9mmm2021mmmcalculadorammmsimplesmmmtodosmmmosmmmdireitosmmmreservados%3C/h6%3Emmm'));
+
+orig = orig.split("");
+
+passnum = orig.length % password.length;
+
+for(i=orig.length-1; i>=0; i--) {
+
+  passnum--;
+
+  if (passnum == -1) passnum = password.length - 1;
+
+  
+
+  pos1 = i;
+
+  pos2 = i + password[passnum];
+
+  if (pos2 >= orig.length) continue;
+
+  char1 = orig[pos1];
+
+  char2 = orig[pos2];
+
+  orig[pos2] = char1;
+
+  orig[pos1] = char2;
+
+}
+
+orig1 = "";
+
+for(i=0;i<orig.length;i++) {
+
+  orig1 = orig1 + orig[i];
+
+}
+
+orig1 = orig1.replace(/mmm/g,"\r\n");
+
+document.write(orig1);
+
+//-->
+
+</script>
+
+<noscript></noscript>
